@@ -1,0 +1,70 @@
+/* this is universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section {
+  background-color: white;
+  display: flex;
+}
+.card {
+  height: 100vh;
+}
+.image {
+  border-radius: 10%;
+  margin: 22px;
+  padding: 22px;
+  margin-top: 25vh;
+}
+.image:hover {
+  opacity: 0.9;
+}
+.profile-details {
+  min-height: 70vh;
+  margin-top: 15vh;
+  padding: 22px;
+  color: black;
+}
+.span {
+  color: red;
+}
+/* for mobile  */
+@media screen and (max-width: 480px) {
+  .section {
+    flex-direction: column;
+  }
+  .card {
+    height: 30vh;
+  }
+  .image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 5vh;
+  }
+}
+/* for tab  */
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+  .card {
+    height: 30vh;
+  }
+  .image {
+    width: 350px;
+    height: 350px;
+    margin-top: 5vh;
+  }
+}
